@@ -35,17 +35,19 @@ Credentials and configurations that will be used in this demonstration can be fo
 On the web browser (Microsoft Edge), go to the Help Desk Login Page and sign in to your osTicket Help Desk credentials (this example uses username ostuser / ostuser@email.com).
 Help Desk Login Page -- http://localhost/osTicket/scp/login.php
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/73954501-a231-4363-9236-ffadcfb671b3)
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/b2ff7ff8-8b74-47da-b81f-1dc0797268e4)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/d95fe1c5-92f6-4ec5-afc0-f14cc81c926e)
 
-Currently at the Agent Panel, click on "Admin Panel" at the top-right of the page.
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/49ba8841-ef98-4276-98a2-a0422e10cfb0)
+You will be brought to the Agent Panel, click on "Admin Panel" at the top-right of the page.
+
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/72567152-620c-49ad-9a8b-c7c61fa28b73)
+
 
 
 Click on the "Agents" tab > "Roles" > "Add New Role".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/e6846ce0-afec-4d48-8b2d-663a08a8657b)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/02772996-20ec-4b70-b8e9-1cbfb7256425)
+
 
 
 "Roles are the permissions granted to Agents per Department that they have access to."
@@ -54,46 +56,52 @@ In the Definition tab, type any Role name of your choice (this example uses Supr
 This role will be given all permissions.
 Then, click on the Permissions tab.
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/822bd216-c592-424d-85c5-709d56cc0313)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/96fb26a4-ae59-41ae-9505-b401978026d6)
+
 
 
 In the Permissions tab, under the Tickets category, checkmark ALL boxes.
 Go through both Tasks and Knowledgebase categories and checkmark ALL boxes as well.
 Once done, click "Add Role".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/e894b3a2-4a3a-4fbb-a3cb-572ddb0cd3f2)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/5de7b7a7-75ff-4c10-9393-e382ada94a64)
+
 
 Now we've created a Supreme Admin role with all permissions granted. Next, we'll create a Department.
 
-Currently in the Agents tab, click on the "Departments" category.
+Currently, in the Agents tab, click on the "Departments" category.
 Click "Add New Department".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/f577a57b-0c17-44c3-9fb7-c632d84674cc)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/6c02d879-ee53-4f74-b203-d611a034d0b0)
+
 
 Create a Department name of your choice (this example uses System Administrators).
 Skip everything else for now and click "Create Dept".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/cdceb898-1360-4d89-b4fa-b15a2d069a7e)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/b7fb22b9-cffb-4717-9456-b167bf27e551)
 
-Next, we'll move onto creating a Team. <br>
+
+Next, we'll move on to creating a Team. <br>
 "Teams allow you to pull Agents from different Departments and organize them to handle a specific issue or user via a Help Topic or Ticket Filter."
 
 Currently in the Agents tab, click on the "Teams" category.
 
 Click "Add New Team".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/8c47d00b-25bb-4bb0-b0a2-4a229f91bb2a)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/c5d6e587-b5a4-4b52-a333-808c91196794)
+
 
 
 Create a Team name of your choice (this example uses Level II Support).
 Click "Create Team".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/c9a6881f-c53b-4db1-82fd-4928f126b4c2)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/5a55f39f-359b-4a09-b2d6-92b362e743a5)
 
 
-Currently in the Agents tab, click "Agents" category.
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/caac7681-50de-4377-944a-544192184204)
+Currently, in the Agents tab, click the "Agents" category, then "Add New Agent".
+
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/0258772f-e1ea-4548-ad42-b185b32ae720)
 
 
 Create the required credentials for this user that are in bold:
@@ -107,7 +115,8 @@ Create a password for this user.
 Uncheck "Require password change at next login".
 Click "Set".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/08747335-6630-4bc8-b279-085ccc9f876a)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/6da4e024-2cf2-414b-8305-fb4cd0848eab)
+
 
 
 Click on the "Access" tab:
@@ -116,41 +125,49 @@ Assign this user the Role that we created (this example uses Supreme Admin).
 Under Extended Access, assign this user the "Support" department with the "Supreme Admin" role.
 Click "Save Changes".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/7ab53742-2268-44ec-a655-2426d8fc1d84)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/935eb874-a83f-4b32-987d-0f50d44694ac)
+
+
 
 
 Click on the "Teams" tab:
 Assign this user the Team that we created (this example uses Level II Support).
 Once done, click "Create".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/c8a715ae-2f97-4667-aa56-c8890ff14069)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/9d8cdd35-748e-4aa0-a712-2d7ce8cd6267)
+
 
 
 Create another Agent following the steps, however assign it to a different Role and Department.</br>
 This example creates Agent "John Doe" | Department: "Level I Support" | Role: "View only | Extended Access: Support".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/7575d375-1878-45e1-b27b-5251d54daf5a)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/86af5d5b-1631-420c-a284-b206f92def78)
+
 
 
 <hr>
 <h3>&#9314; Agent Panel - Creating Users</h3>
 Click on "Agent Panel" on the top-right of the page.
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/b0d3ad56-2a52-451b-b1a8-8f5a2661a97c)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/4a96bc9d-3f5e-49ae-b713-4649affa5fcd)
+
 
 Click on the "Users" tab.
 Click on "Add User".
 Create an Email Address and Full Name for this user (this example uses karen@osticket.com / Karen Karen).
 Click "Add User".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/a3bc0447-ac41-4a32-b211-21d00dc61324)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/b98ef4d8-61fd-488e-ab1c-873fa317fa4e)
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/2560cbf6-8863-4798-99c4-65a865c2f94d)
+
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/999f75cd-095d-4316-ba8b-b7fbbf5527b5)
+
 
 
 Create another user of your choice (this example uses ken@osticket.com / Ken Ken)
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/d0ee8458-14f2-49d3-9a64-f4f25ca82218)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/c658a495-2015-4fc3-90e9-465797a38bbb)
+
 
 
 <hr>
@@ -161,7 +178,7 @@ Return to the "Admin Panel".
 Navigate to "Manage" tab > "SLA".
 Click "Add New SLA Plan".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/c7e65cb3-0bac-486b-bc9e-54a1055609fa)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/a7efb170-b1e9-469f-bb7e-2e343fbd2dbd)
 
 
 Create the following plans:
@@ -179,9 +196,11 @@ Grace Period: 8 hours
 Schedule: Monday - Friday 8am - 5pm with U.S. Holidays
 Click "Add Plan" for each.
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/b83a83d6-2330-4e83-99ae-57a39b487253)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/e8fb31de-b2c6-4571-8599-8ebc33272416)
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/64008205-55d2-4609-8249-04f937458f17)
+
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/08b699f2-2b86-4ae8-a13c-67c29c9d163a)
+
 
 
 <hr>
@@ -191,7 +210,8 @@ Help Topics will help streamline your end-user’s help desk experience to ensur
 Currently in the Admin Panel, navigate to "Manage" tab > "Help Topics".
 Click "Add New Help Topic".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/a5cbf5d4-735b-48e0-b5ca-9d82b99925b0)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/4ab22285-d24e-475d-b843-187ca7724bdc)
+
 
 
 Create Help Topics with the following names:
@@ -202,9 +222,11 @@ Password Reset
 "Internal Notes" can be written down for personal use, but not necessary.
 After that, click "Add Topic".
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/59aaf9fe-4492-433b-b1f7-fb012213f561)
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/e6bfb31c-6861-4365-ae6e-e8409088f56a)
 
-![image](https://github.com/JasonDelahoussaye/post-install-config/assets/106440235/7cdfb439-7df5-4d16-9e88-5ab6a5d5d23a)
+
+![image](https://github.com/ShayneSL/osTicket-BackEnd-Config/assets/88577075/76c7e07e-bd7c-4a48-89c4-dd43fb935d2c)
+
 
 
 <hr>
