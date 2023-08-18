@@ -232,7 +232,7 @@ After that, click "Add Topic".
 <hr>
 <h1><p align=center>All Done</p></h1
 
-<h2><p align=center>Next Demonstration:<br><a href="https://github.com/JasonDelahoussaye/ticket-lifecycle">Ticket Lifecycle Examples</a></p></h2>
+<h2><p align=center>Next Demonstration:<br><a href="https://github.com/ShayneSL/Ticket-Lifecycle">Ticket Lifecycle Examples</a></p></h2>
 
 
 
